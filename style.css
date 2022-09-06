@@ -1,0 +1,61 @@
+*{
+    color: rgb(225,225,225);
+    font-size: 35px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: bisque;
+}
+ header{
+    padding: 10px;
+ }
+.departures{
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    padding: 10px;
+ }
+.departures table {
+    background-color: rgb(90, 90, 90);
+    text-align: left;
+}
+.departures table div {
+    border: solid 4px rgb(25,25,25);
+    background-color: black;
+    float: left;
+    height: 40px;
+}
+.departures table td {
+    height: 50px;
+}
+#time{
+    width: 160px;
+}
+#destination{
+    max-width: 300px;
+}
+#gate{
+    width: 135px;
+}
+#remarks{
+    width: 300px;
+}
+
+.flip {
+    animation: .5s linear flipping;
+}
+
+@keyframes flipping{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
